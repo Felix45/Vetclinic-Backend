@@ -8,8 +8,6 @@ class Dog < Animal
     @color = color
   end
 
-  public
-
   def bring_a_stick
     'Dog bringing stick ----------->'
   end

@@ -1,6 +1,6 @@
 class Animal
-  attr_reader :id, :visits
-  attr_accessor :owner, :name, :number_of_legs
+  attr_reader :id, :visits, :owner
+  attr_accessor :name, :number_of_legs
 
   def initialize(name, number_of_legs)
     @id = Random.rand(1..1000)
@@ -15,7 +15,7 @@ class Animal
   end
 
   def remove_leg
-     @number_of_legs -= 1 if @number_of_legs > 0
+    @number_of_legs -= 1 if @number_of_legs.positive?
   end
 
   def owner=(owner)
@@ -23,4 +23,3 @@ class Animal
     owner.animals.push(self) unless owner.animals.include?(self)
   end
 end
-    

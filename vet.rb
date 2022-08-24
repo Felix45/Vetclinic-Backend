@@ -8,8 +8,6 @@ class Vet
     @address = address
   end
 
-  public
-
   def add_visit(visit)
     @visits.push(visit)
   end
