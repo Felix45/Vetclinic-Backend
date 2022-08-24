@@ -1,4 +1,4 @@
-class vet
+class Vet
   attr_accessor :name, :address
   attr_reader :visits
 
